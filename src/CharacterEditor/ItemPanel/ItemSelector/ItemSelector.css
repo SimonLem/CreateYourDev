@@ -1,0 +1,15 @@
+.ItemSelectorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LeftArrow {
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.RightArrow {
+  transform: rotate(90deg);
+  cursor: pointer;
+}

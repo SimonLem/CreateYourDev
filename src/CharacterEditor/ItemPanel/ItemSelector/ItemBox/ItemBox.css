@@ -1,0 +1,25 @@
+.ItemBoxContainer {
+  width: 50px;
+  height: 50px;
+}
+
+.descriptionFrame {
+  padding-left: 10px;
+  position: absolute;
+  user-select: none;
+  width: 200px;
+  color: #eeeeee;
+  background-color: rgba(13, 11, 48, 0.908);
+  z-index: 1;
+  border-radius: 5px;
+}
+.itemName {
+  color: #56c44a;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.itemDescription {
+  font-weight: 300;
+  font-size: 12px;
+}

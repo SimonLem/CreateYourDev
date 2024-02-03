@@ -1,0 +1,11 @@
+.ItemPanelContainer {
+  width: 150px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  background-color: rgba(34, 33, 33, 0.435);
+  border-radius: 25px;
+}
