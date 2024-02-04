@@ -9,12 +9,12 @@ import { useState } from "react";
 import { useCharacterContext } from "../../../Contexts/CharacterContext";
 
 const ItemTypeLabels = {
-  head: "Head",
-  chest: "Chest",
-  legs: "Legs",
-  hands: "Weapon",
-  accessories: "Accessory",
-  feet: "Feet",
+  head: "Tête",
+  chest: "Torse",
+  legs: "Jambes",
+  hands: "Arme",
+  accessories: "Accessoire",
+  feet: "Pieds",
 };
 
 interface ItemSelectorProps {

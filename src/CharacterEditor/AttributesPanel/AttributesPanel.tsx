@@ -46,21 +46,21 @@ function AttributesPanel(props: AttributesPanelProps) {
 
   return (
     <div className="AttributesContainer">
-      <h2>Skills</h2>
+      <h2>Compétences</h2>
       <div>
-        <p> Dev</p>
+        <p> Dev </p>
         <ProgressionBar progression={devSkill} />
       </div>
       <div>
-        <p> Professionalism</p>
+        <p> Image professionelle</p>
         <ProgressionBar progression={professionalLook} />
       </div>
       <div>
-        <p> Professionnal Look</p>
+        <p> Fun </p>
         <ProgressionBar progression={fun} />
       </div>
       <div>
-        <p> Dancing</p>
+        <p> Danse</p>
         <ProgressionBar progression={catchSkill} />
       </div>
     </div>
