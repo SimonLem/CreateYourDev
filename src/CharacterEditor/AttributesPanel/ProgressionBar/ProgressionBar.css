@@ -6,7 +6,7 @@
 }
 
 .ProgressionBarFilled {
-  background: rgb(255, 0, 0);
+  background: #08cc0a;
   height: 15px;
   z-index: 1;
   border-radius: 50px;

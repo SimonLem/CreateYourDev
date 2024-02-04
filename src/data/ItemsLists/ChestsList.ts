@@ -16,7 +16,7 @@ export const ChestsList: Array<Item>  = [
     {
         id: 1,
         name: "Chemise Hawaienne",
-        description: "Une chemise qui crie l'été, le soleil, et une certaine insouciance vestimentaire discutable.",
+        description: "Une chemise qui crie l'été, le soleil, et une certaine insouciance vestimentaire.",
         imageName: "ChestShirt",
         stats: {
             devSkill: 0,
@@ -28,7 +28,7 @@ export const ChestsList: Array<Item>  = [
     {
         id: 2,
         name: "Crop top de soirée",
-        description: "Pour les nombrils qui veulent dire 'coucou' au reste du monde.",
+        description: "Pour les nombrils qui veulent faire coucou au reste du monde.",
         imageName: "ChestTop",
         stats: {
             devSkill: 1,

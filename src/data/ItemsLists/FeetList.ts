@@ -4,7 +4,7 @@ export const FeetList: Array<Item>  = [
     {
         id: 0,
         name: "Baskets Kalenji",
-        description: "La légende raconte que la chaussure qui va vite augmente aussi la vitesse d'écriture au clavier.",
+        description: "Il semble que la chaussure qui va vite augmente aussi la vitesse d'écriture au clavier.",
         imageName: "FeetBaskets",
         stats: {
             devSkill: 1.5,

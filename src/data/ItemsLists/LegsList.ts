@@ -16,7 +16,7 @@ export const LegsList: Array<Item>  = [
     {
         id: 1,
         name: "Short de plage",
-        description: "Transforme chaque mollet en toile blanche pour le Soleil et ses nuances de rouge.",
+        description: "Transforme les mollets en toile blanche pour le Soleil et ses nuances de rouge.",
         imageName: "LegsShort",
         stats: {
             devSkill: 1,
