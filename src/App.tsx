@@ -9,7 +9,7 @@ function App() {
         <CharacterEditor />
         <div className="LinksRow">
           <p>
-            Project link :{" "}
+            Repo du projet :{" "}
             <a
               className="Links"
               href="https://github.com/SimonLem/CreateYourDev"
