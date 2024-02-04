@@ -15,6 +15,12 @@
   padding: 0;
   font-family: "TitleFont";
 }
+.LinksRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
 
 .column {
   display: flex;
@@ -34,4 +40,8 @@
   font-family: "TitleFont";
   font-size: 60px;
   margin-bottom: 0;
+}
+
+.Links {
+  color: rgba(0, 0, 0, 0.671);
 }
