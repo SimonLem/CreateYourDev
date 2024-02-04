@@ -50,11 +50,11 @@ function CharacterPreview(props: CharacterPreviewProps) {
       {characterGear.feet.id === 0 && <FeetBaskets />}
       {characterGear.feet.id === 1 && <FeetTongs />}
       {characterGear.feet.id === 2 && <FeetSantiags />}
+      {characterGear.legs.id === 0 && <LegsJean />}
+      {characterGear.legs.id === 1 && <LegsShort />}
       {characterGear.chest.id === 1 && <ChestShirt />}
       {characterGear.chest.id === 0 && <ChestTeeShirt />}
       {characterGear.chest.id === 2 && <ChestTop />}
-      {characterGear.legs.id === 0 && <LegsJean />}
-      {characterGear.legs.id === 1 && <LegsShort />}
       {characterGear.legs.id === 2 && <LegsShirt />}
       {characterGear.hands.id === 2 && <HandsButterflyNet />}
       {characterGear.head.id === 0 && <HeadCap />}
