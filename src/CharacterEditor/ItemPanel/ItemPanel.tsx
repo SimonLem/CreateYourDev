@@ -1,5 +1,7 @@
 import "./ItemPanel.css";
+
 import ItemSelector from "./ItemSelector/ItemSelector";
+
 import { HandsList } from "../../data/ItemsLists/HandsList";
 import { HeadsList } from "../../data/ItemsLists/HeadsList";
 import { LegsList } from "../../data/ItemsLists/LegsList";

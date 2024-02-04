@@ -7,7 +7,7 @@
   padding-left: 10px;
   position: absolute;
   user-select: none;
-  width: 200px;
+  width: 300px;
   color: #eeeeee;
   background-color: rgba(13, 11, 48, 0.908);
   z-index: 1;
@@ -16,10 +16,10 @@
 .itemName {
   color: #56c44a;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 21px;
 }
 
 .itemDescription {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 15px;
 }

@@ -4,7 +4,10 @@ import "./App.css";
 function App() {
   return (
     <div className="AppContainer">
-      <CharacterEditor />
+      <div className="AppContent">
+        <h1 className="AppTitle">Build your perfect dev</h1>
+        <CharacterEditor />
+      </div>
     </div>
   );
 }

@@ -3,20 +3,38 @@ import Item from '../../Interfaces/ItemInterface'
 export const HeadsList: Array<Item>  = [
     {   
         id: 0,
-        name: "Gants de start-upeur",
-        description: "+10 en polyvalence",
+        name: "Casquette classique",
+        description: "Cache le soleil et les cheveux sales après une session de jeux vidéos nocturne prolongée.",
         imageName: "HeadCap",
+        stats: {
+            devSkill: 1,
+            professionalLook: 1,
+            fun: 0.5,
+            catchSkill: 0,
+        }
     },
     {   
         id: 1,
-        name: "Gants de jardinier",
-        description: "Ajoute 2 a ta daronne",
+        name: "Chapeau de vacancier",
+        description: "Pour faire tourner toutes les têtes lors des ballades sur la plage.",
         imageName: "HeadHat",
+        stats: {
+            devSkill: 0,
+            professionalLook: 1,
+            fun: 2,
+            catchSkill: 0,
+        }
     },
     {
         id: 2,
-        name: "Gants de java",
-        description: "Ajoute 10 al a compétence en java",
+        name: "Oreiles de chat",
+        description: "Rend mignon et facilite le camouflage dans les concerts de K-Pop.",
         imageName: "HeadCatEars",
+        stats: {
+            devSkill: 0,
+            professionalLook: 0,
+            fun: 2,
+            catchSkill: 0,
+        }
     },
 ];

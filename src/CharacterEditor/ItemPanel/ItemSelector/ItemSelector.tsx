@@ -6,7 +6,16 @@ import ItemBox from "./ItemBox/ItemBox";
 import Item from "../../../Interfaces/ItemInterface";
 
 import { useState } from "react";
-import { useGearContext } from "../../../Contexts/GearContext";
+import { useCharacterContext } from "../../../Contexts/CharacterContext";
+
+const ItemTypeLabels = {
+  head: "Head",
+  chest: "Chest",
+  legs: "Legs",
+  hands: "Weapon",
+  accessories: "Accessory",
+  feet: "Feet",
+};
 
 interface ItemSelectorProps {
   ItemType: string;
@@ -16,7 +25,7 @@ interface ItemSelectorProps {
 function ItemSelector(props: ItemSelectorProps) {
   const { ItemType, ItemList } = props;
 
-  const { characterGear, setCharacterGear } = useGearContext();
+  const { characterGear, setCharacterGear } = useCharacterContext();
 
   const [displayedItemIndex, setDisplayedItemIndex] = useState(0);
 
@@ -54,7 +63,7 @@ function ItemSelector(props: ItemSelectorProps) {
 
   return (
     <div className="column">
-      {ItemType}
+      {ItemTypeLabels[ItemType as keyof typeof ItemTypeLabels]}
       <div className="ItemSelectorContainer">
         <FontAwesomeIcon
           icon={faSortUp}

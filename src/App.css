@@ -1,10 +1,19 @@
+@font-face {
+  font-family: "TitleFont"; /*Can be any text*/
+  src:
+    local("Pixelify"),
+    url("./data/fonts/Pixelify.ttf") format("truetype");
+}
+
 .AppContainer {
   background: radial-gradient(#885942, #6c3316);
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "TitleFont";
 }
 
 .column {
@@ -13,4 +22,16 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+
+.AppContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.AppTitle {
+  font-family: "TitleFont";
+  font-size: 60px;
+  margin-bottom: 0;
 }

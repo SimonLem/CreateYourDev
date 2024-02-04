@@ -4,19 +4,37 @@ export const HandsList: Array<Item>  = [
     {
         id: 0,
         name: "MacBook Pro",
-        description: "+10 en productivité -10 en originalité",
-        imageName: "HandsComputer"
+        description: "Le meilleur ami du latté bio à 16 euros.",
+        imageName: "HandsComputer",
+        stats: {
+            devSkill: 3,
+            professionalLook: 2,
+            fun: 0.5,
+            catchSkill: 0,
+        }
     },
     {   
         id: 1,
         name: "Tequila Sunrise bien chargé",
-        description: "+10 en blague -2000 en productivité",
-        imageName: "HandsCocktail"
+        description: "La potion magique des adultes.",
+        imageName: "HandsCocktail",
+        stats: {
+            devSkill: 0,
+            professionalLook: 0,
+            fun: 2,
+            catchSkill: 0,
+        }
     },
     {   
         id: 2,
         name: "Filet à papillon",
-        description: "Super pour attraper les papillons et les bugs critiques",
-        imageName: "HandsButterflyNet"
+        description: "Super pour attraper les papillons et les bugs critiques.",
+        imageName: "HandsButterflyNet",
+        stats: {
+            devSkill: 1,
+            professionalLook: 0,
+            fun: 2,
+            catchSkill: 0,
+        }
     },
 ];

@@ -40,7 +40,7 @@ function CharacterPreview(props: CharacterPreviewProps) {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 144 192"
-      height="600"
+      height="450"
       width="400"
     >
       <title>{"CharacterPreview"}</title>

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext } from "react"
 
 import Gear from "../Interfaces/GearInterface"
 
@@ -23,9 +23,9 @@ interface ContextInterface {
     setCharacterGear:(c: Gear) => void,
 }
 
-export const GearContext = createContext<ContextInterface>({
+export const CharacterContext = createContext<ContextInterface>({
     characterGear: defaultGear,
     setCharacterGear: () => {},
 })
 
-export const useGearContext = () => useContext(GearContext)
+export const useCharacterContext = () => useContext(CharacterContext)

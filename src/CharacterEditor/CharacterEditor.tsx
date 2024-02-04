@@ -1,11 +1,14 @@
+import { useState } from "react";
+
+import "./CharacterEditor.css";
+
 import CharacterPreview from "./CharacterPreview/CharacterPreview";
 import ItemPanel from "./ItemPanel/ItemPanel";
-import "./CharacterEditor.css";
-import { useState, useContext } from "react";
+import AttributesPanel from "./AttributesPanel/AttributesPanel";
 
 import Gear from "../Interfaces/GearInterface";
 
-import { GearContext } from "../Contexts/GearContext";
+import { CharacterContext } from "../Contexts/CharacterContext";
 
 import { HeadsList } from "../data/ItemsLists/HeadsList";
 import { ChestsList } from "../data/ItemsLists/ChestsList";
@@ -28,11 +31,12 @@ function CharacterEditor() {
 
   return (
     <div className="CharacterEditorContainer">
-      <GearContext.Provider value={{ characterGear, setCharacterGear }}>
+      <CharacterContext.Provider value={{ characterGear, setCharacterGear }}>
         <ItemPanel PanelType="left" />
         <CharacterPreview characterGear={characterGear} />
         <ItemPanel PanelType="right" />
-      </GearContext.Provider>
+        <AttributesPanel characterGear={characterGear} />
+      </CharacterContext.Provider>
     </div>
   );
 }

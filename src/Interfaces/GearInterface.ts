@@ -1,4 +1,4 @@
-import Item from './ItemInterface'
+import Item from './ItemInterface';
 
 export default interface GearInterface {
     head: Item,
