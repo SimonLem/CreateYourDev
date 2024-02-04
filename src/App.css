@@ -15,6 +15,7 @@
   font-family: "TitleFont";
   min-height: 100vh;
   width: 100vw;
+  user-select: none;
 }
 
 .row {
@@ -23,7 +24,7 @@
 }
 .LinksRow {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -39,6 +40,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+  justify-content: space-between;
 }
 .AppTitle {
   font-family: "TitleFont";
@@ -66,7 +69,9 @@
 
   .AttributesContainer {
     margin-left: 0;
-    margin-top: -15%;
+    margin-top: -30%;
+    align-self: center;
+    scale: 0.7;
   }
   .AppContent {
     width: 100vw;
