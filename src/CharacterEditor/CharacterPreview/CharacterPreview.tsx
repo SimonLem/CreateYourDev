@@ -1,4 +1,5 @@
-import "./CharacterPreview.css";
+import { useContext } from "react";
+import { isMobileContext } from "../../App";
 
 import SimonBody from "./SVGLayers/SimonBody";
 
@@ -35,13 +36,15 @@ interface CharacterPreviewProps {
 function CharacterPreview(props: CharacterPreviewProps) {
   const { characterGear } = props;
 
+  const isMobile = useContext<boolean>(isMobileContext);
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 144 192"
       height="450"
-      width="400"
+      width={isMobile ? "60%" : "100%"}
     >
       <title>{"CharacterPreview"}</title>
       {characterGear.hands.id === 0 && <HandsComputer />}

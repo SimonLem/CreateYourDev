@@ -33,7 +33,7 @@ export const FeetList: Array<Item>  = [
         stats: {
             devSkill: 1,
             professionalLook: 1,
-            fun: 1,
+            fun: 2,
             catchSkill: 0,
         }
     }

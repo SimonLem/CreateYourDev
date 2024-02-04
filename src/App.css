@@ -10,16 +10,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "TitleFont";
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.row {
+  display: flex;
+  margin: 0;
 }
 .LinksRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
 }
 
 .column {
@@ -34,7 +39,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
 }
 .AppTitle {
   font-family: "TitleFont";
@@ -44,4 +48,31 @@
 
 .Links {
   color: rgba(0, 0, 0, 0.671);
+  margin: 0;
+}
+
+@media (width <= 768px) {
+  .AppTitle {
+    font-family: "TitleFont";
+    font-size: 25px;
+    margin-bottom: -12%;
+  }
+  .AttributesContainer {
+    width: 250px;
+  }
+  .ItemPanelContainer {
+    scale: 0.7;
+  }
+
+  .AttributesContainer {
+    margin-left: 0;
+    margin-top: -15%;
+  }
+  .AppContent {
+    width: 100vw;
+  }
+  .LinksRow {
+    flex-direction: column;
+    padding: 10px;
+  }
 }

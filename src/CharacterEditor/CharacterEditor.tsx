@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { isMobileContext } from "../App";
 
 import "./CharacterEditor.css";
 
@@ -29,12 +30,19 @@ const defaultGear: Gear = {
 function CharacterEditor() {
   const [characterGear, setCharacterGear] = useState<Gear>(defaultGear);
 
+  const isMobile = useContext<boolean>(isMobileContext);
+
   return (
-    <div className="CharacterEditorContainer">
+    <div
+      className="CharacterEditorContainer"
+      style={{ flexDirection: isMobile ? "column" : "row" }}
+    >
       <CharacterContext.Provider value={{ characterGear, setCharacterGear }}>
-        <ItemPanel PanelType="left" />
-        <CharacterPreview characterGear={characterGear} />
-        <ItemPanel PanelType="right" />
+        <div className="row">
+          <ItemPanel PanelType="left" />
+          <CharacterPreview characterGear={characterGear} />
+          <ItemPanel PanelType="right" />
+        </div>
         <AttributesPanel characterGear={characterGear} />
       </CharacterContext.Provider>
     </div>
