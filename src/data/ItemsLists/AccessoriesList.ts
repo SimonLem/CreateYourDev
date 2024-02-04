@@ -16,7 +16,7 @@ export const AccessoriesList: Array<Item>  = [
     {
         id: 1,
         name: "Collier de fleur",
-        description: "C",
+        description: "Pour les fêtards à la main verte.",
         imageName: "AccessoriesNeckless",
         stats: {
             devSkill: 0,
