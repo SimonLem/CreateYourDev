@@ -16,7 +16,7 @@ export const HeadsList: Array<Item>  = [
     {   
         id: 1,
         name: "Chapeau de vacancier",
-        description: "Pour faire tourner toutes les têtes lors des ballades sur la plage.",
+        description: "Pour faire tourner toutes les têtes sur la croisette.",
         imageName: "HeadHat",
         stats: {
             devSkill: 0,
